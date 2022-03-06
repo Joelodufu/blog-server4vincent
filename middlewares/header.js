@@ -20,6 +20,8 @@ headers.use((req, res, next) => {
         "Access-Control-Allow-Methods",
         "GET, POST, PATCH,PUT, DELETE, OPTIONS"
     );
+    res.removeHeader('via');
+    res.removeHeader('etag');
     next();
 });
 
