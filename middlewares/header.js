@@ -9,6 +9,9 @@ console.log("part1")
 headers.use((req, res, next) => {
    
     res.setHeader("Access-Control-Allow-Origin", "*");
+   
+    res.setHeader("content-type", "application/json; charset=utf-8");
+    res.setHeader("date", `${new Date().toGMTString()}`);
     res.setHeader(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept,Authorization"
