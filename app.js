@@ -12,6 +12,8 @@ const profileRoutes = require("./Routes/profile");
 
 
 const app = express()
+app.disable('via');
+app.disable('server');
 
 const PORT = process.env.PORT || 3001
 
