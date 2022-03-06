@@ -9,10 +9,8 @@ const userRoutes = require("./Routes/user");
 const profileRoutes = require("./Routes/profile");
 
 
-const cors = require('cors')
 
 const app = express()
-app.use(cors)
 const PORT = process.env.PORT || 3001
 const db = require("./db/db")
 
