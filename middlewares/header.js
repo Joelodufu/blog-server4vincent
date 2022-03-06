@@ -20,4 +20,4 @@ headers.use((req, res, next) => {
     next();
 });
 
-module.exports = headers
+module.exports = headers 
