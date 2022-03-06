@@ -1,7 +1,7 @@
 const path = require("path");
 const express = require("express")
 const mongoose = require("mongoose")
-
+const db = require("./db/db")
 const header_middleware = require("./middlewares/header")
 
 const postRouter = require("./Routes/post");
@@ -10,9 +10,11 @@ const profileRoutes = require("./Routes/profile");
 
 
 
+
 const app = express()
+
 const PORT = process.env.PORT || 3001
-const db = require("./db/db")
+
 
 app.use(express.json())
 app.use(header_middleware)
