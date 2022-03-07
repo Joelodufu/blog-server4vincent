@@ -20,8 +20,6 @@ headers.use((req, res, next) => {
         "Access-Control-Allow-Methods",
         "GET, POST, PATCH,PUT, DELETE, OPTIONS"
     );
-      res.disable("server");
-    res.disable("via");
     next();
 });
 
